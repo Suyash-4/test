@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Hammersmith+One&family=Hepta+Slab:wght@500&family=Hind+Madurai&family=Manrope:wght@300&family=Numans&family=Open+Sans:wght@300&family=PT+Sans&family=Pixelify+Sans&family=Poppins:wght@300&family=Quicksand:wght@600&family=Raleway:ital,wght@0,300;0,400;1,100&family=Red+Hat+Display&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Assistant', sans-serif;
+    font-family: 'Hammersmith One', sans-serif;
+    font-family: 'Hepta Slab', serif;
+    font-family: 'Hind Madurai', sans-serif;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Numans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.first-image {
+    height: 100vh;
+    background-image: url('robert-bagramov--0IPe4TapUg-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.second-image {
+    height: 100vh;
+    background-image: url('evgeny-matveev-bcevowLa38o-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.second-image #about-us {
+    background-color: rgba(0, 0, 0, 0.432);
+    height: 100vh;
+    padding: 3.5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#about-us #_1st-para p {
+    font-size: 25px;
+}
+
+.navbar {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    color: white;
+    padding: 3%;
+    font-size: 25px;
+    background-color: rgba(24, 24, 24, 0.481);
+}
+
+.navbar #elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.navbar #elements ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.navbar #elements ul li {
+    margin: 0 10px;
+    transition: transform 0.3s;
+    color: white;
+}
+
+.navbar #elements ul li:hover {
+    color:brown; 
+    transform: translateY(-5px); 
+}
+
+.navbar #menu-button {
+    display: none;
+    cursor: pointer;
+    /* changes the cursor to hand icon */
+}
+
+
+.content {
+    text-align: center;
+    color: white;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote {
+    font-size: 40px;
+    opacity: 0;
+    position: absolute;
+    animation: fadeInOut 21s ease-in-out infinite;
+}
+
+.quote:nth-child(2) {
+    animation-delay: 7s;
+}
+
+.quote:nth-child(3) {
+    animation-delay: 14s;
+}
+
+@keyframes fadeInOut {
+
+    0%,
+    30% {
+        opacity: 0;
+    }
+
+    35%,
+    65% {
+        opacity: 1;
+    }
+
+    70%,
+    100% {
+        opacity: 0;
+    }
+}
+
+.third-image {
+    height: 100vh;
+    background-image: url('hiran.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.third-image #contact{
+    padding: 4%;
+}
+
+
+.fourth-image {
+    height: 100vh;
+    background-image: url('arthur-arias-fock73gZA6M-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px ) {
+    #about-us #_1st-para p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 920px ) {
+    #about-us #_1st-para p {
+        font-size: 24px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar #elements ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: rgba(24, 24, 24, 0.481);
+        z-index: 1;
+        min-width: 100%;
+    }
+
+    .navbar #menu-button {
+        display: block;
+        cursor: pointer;
+    }
+
+    .content {
+        width: 95% !important;
+    }
+
+    .content .quote {
+        margin-top: 10px;
+    }
+
+    #about-us #_1st-para p {
+        font-size: 18px;
+    }
+
+    
+}
+
+@media screen and (max-width: 400px) {
+    
+    
+    #about-us #_1st-para p {
+        font-size: 12px;
+    }
+}
